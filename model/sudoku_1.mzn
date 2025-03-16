@@ -39,10 +39,14 @@ constraint forall(i,j in DOMAIN) (
     endif
 );
         
-%solve satisfy;
-%solve :: int_search(cell, smallest, indomain_max, complete) satisfy;
-%solve :: int_search(cell, first_fail, complete) satisfy;
 
 solve :: int_search(cell, first_fail, complete) satisfy;
-%solve :: int_search(board, smallest, complete) satisfy;
-%solve :: int_search(board, input_order, complete) satisfy;
+%solve :: int_search(cell, smallest, complete) satisfy;
+%solve :: int_search(cell, input_order, complete) satisfy;
+
+output [
+  if index mod n = 0 then show(cell[index]) ++ "\n"
+  else show(cell[index]) ++ " "
+  endif 
+  | index in 1..n*n
+];
