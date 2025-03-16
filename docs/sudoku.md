@@ -78,7 +78,7 @@ En MiniZinc, la distribución de valores en las variables puede influir signific
 
 Selecciona primero la variable con el dominio más pequeño, lo que ayuda a reducir rápidamente el espacio de búsqueda al priorizar aquellas que tienen menos opciones disponibles. Esto permite disminuir la cantidad de decisiones erróneas y mejorar la eficiencia de la búsqueda.
 
-![Árbol de búsqueda - first_fail](./images/arbol-sudoku-first_fail.png)
+![Árbol de búsqueda - first_fail](./images/arbol-sudoku-first_tail.png)
 
 #### 2. `smallest`
 
