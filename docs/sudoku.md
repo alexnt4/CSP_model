@@ -29,8 +29,8 @@ El Sudoku se puede formular como un CSP con las siguientes características:
 ### 2.3. Restricciones
 
 1. **Unicidad en filas:** Cada fila debe contener los números del 1 al 9 sin repeticiones:
-   $$\forall i∈{1,…,9}, \; \; alldifferent({grid[i,j]∣j∈{1,…,9}})$$
-2. **Unicidad en columnas:** Cada columna debe cumplir la misma restricción: $$\forall j∈{1,…,9}, \; \; alldifferent({grid[i,j]∣ i∈{1,…,9}})$$
+   $$\forall i∈{1,…,9},  alldifferent({grid[i,j]∣j∈{1,…,9}})$$
+2. **Unicidad en columnas:** Cada columna debe cumplir la misma restricción: $$\forall j∈{1,…,9}, alldifferent({grid[i,j]∣ i∈{1,…,9}})$$
 3. **Unicidad en subcuadrículas:** Cada bloque de $3 \times 3$ debe contener los números del 1 al 9 sin repeticiones:
    $$\forall r, c \in \{0, 1, 2\}, \quad \text{alldifferent}(\{ grid[i, j] \mid i \in 3r+1..3r+3, j \in 3c+1..3c+3 \})$$
 4. **Casillas predefinidas:** Algunas casillas tienen valores fijos establecidos en la entrada.
